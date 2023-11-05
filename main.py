@@ -55,8 +55,16 @@ def load(crypto_data):
     conn.commit()
     print("Data loaded successfully")
 
+def query():
+    cur, conn = connect()
+    cur.execute("SELECT * FROM crypto")
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+    conn.close()
+
 if __name__ == "__main__":
     myjson = extract()
     data_transformed = transform(myjson)
     data_loaded = load(data_transformed)
-    print(data_loaded)
+    query()
