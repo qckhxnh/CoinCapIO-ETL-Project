@@ -4,5 +4,5 @@ This project is a Python script that extracts cryptocurrency market data from th
 
 ![image](https://github.com/qckhxnh/CoinCapIO-ETL-Project/assets/117861644/414b4bd9-68c9-4c73-bc18-4618ad901eb7)
 
-Above is a screenshot of my local PostgreSQL database.
+Above is a screenshot of my local PostgreSQL database after the data was extracted, transformed and loaded.
 
